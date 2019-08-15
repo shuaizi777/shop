@@ -11,10 +11,18 @@
 
     <artifactId>shop-basics</artifactId>
     <packaging>pom</packaging>
+
     <modules>
-        <module>api-gateway</module>
         <module>eureka-server</module>
+        <module>api-gateway</module>
     </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>
